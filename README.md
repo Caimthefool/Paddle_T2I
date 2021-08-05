@@ -6,3 +6,8 @@ we use the Oxford-102 datatset that provided in [text-to-image-synthesis](https:
 ```
 python main.py
 ```
+# Test
+```
+python main.py
+```
+# Results
