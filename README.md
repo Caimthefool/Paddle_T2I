@@ -14,4 +14,4 @@ python main.py
 # Results
 Dataset | Paddle_T2I | Text_to_Image_Synthesis
 :------:|:----------:|:------------------------:|
-[Oxford-102]|<img src="examples/paddle_T2I_64images.png" width="400"/><br/>|<img src="examples/Text_to_Image_Synthesis_64_images.jpeg" width="400"/><br/>|
+[Oxford-102]|<img src="examples/paddle_T2I_64images.png" width="400"/><br/>|<img src="examples/Text_to_Image_Synthesis_64_images.png" width="400"/><br/>|
