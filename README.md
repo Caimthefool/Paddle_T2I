@@ -11,6 +11,10 @@ python main.py
 ```
 python main.py --validation
 ```
+# Log
+```
+visualdl --logdir Log --port 8080
+```
 # Results
 Dataset | Paddle_T2I | Text_to_Image_Synthesis
 :------:|:----------:|:------------------------:|
