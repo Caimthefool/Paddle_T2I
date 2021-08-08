@@ -9,7 +9,7 @@ python main.py
 ```
 # Test
 ```
-python main.py
+python main.py --validation
 ```
 # Results
 Dataset | Paddle_T2I | Text_to_Image_Synthesis
