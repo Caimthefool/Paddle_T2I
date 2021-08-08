@@ -18,4 +18,4 @@ visualdl --logdir Log --port 8080
 # Results
 Dataset | Paddle_T2I | Text_to_Image_Synthesis
 :------:|:----------:|:------------------------:|
-[Oxford-102]|<img src="examples/paddle_T2I_64images.png" height = "400" width="400"/><br/>|<img src="examples/Text_to_Image_Synthesis_64_images.png" height = "400" width="400"/><br/>|
+[Oxford-102]|<img src="examples/paddle_T2I_64images.png" height = "300" width="300"/><br/>|<img src="examples/Text_to_Image_Synthesis_64_images.png" height = "300" width="300"/><br/>|
