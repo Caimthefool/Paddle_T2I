@@ -1,7 +1,7 @@
 # Paddle_T2I
 Generative Adversarial Text to Image Synthesis 论文复现
 # Dataset
-we use the Oxford-102 datatset that provided in [text-to-image-synthesis](https://github.com/aelnouby/Text-to-Image-Synthesis).
+we use the [Oxford-102](https://drive.google.com/open?id=1EgnaTrlHGaqK5CCgHKLclZMT_AMSTyh8) datatset that provided in [text-to-image-synthesis](https://github.com/aelnouby/Text-to-Image-Synthesis).
 Download the data to ```Data\```
 # Training
 ```
