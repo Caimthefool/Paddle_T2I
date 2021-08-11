@@ -16,11 +16,11 @@ Generative Adversarial Text to Image Synthesis 论文复现
 - 图像对应的字符串文本```txt```
 # Training
 ```
-python main.py
+python main.py --split=0
 ```
 # Test
 ```
-python main.py --validation
+python main.py --validation --split=2
 ```
 # Log
 ```
