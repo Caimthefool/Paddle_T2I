@@ -20,7 +20,7 @@ python main.py --split=0
 ```
 # Test
 ```
-python main.py --validation --split=2
+python main.py --validation --split=2 --pretrain_model=model/netG_200.pth
 ```
 # Log
 ```
