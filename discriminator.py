@@ -2,6 +2,7 @@ import paddle
 import paddle.nn as nn
 
 
+# define the discriminator
 class Discriminator(nn.Layer):
     def __init__(self):
         super(Discriminator, self).__init__()
@@ -36,13 +37,13 @@ class Discriminator(nn.Layer):
             nn.LeakyReLU(0.2)
             # 512 x 4 x 4
         )
-
+        # reduce the dimension of sentence embeddings
         self.pro_module = nn.Sequential(
             nn.Linear(self.embed_dim, self.projected_embed_dim),
             nn.BatchNorm1D(self.projected_embed_dim, weight_attr=self.batch_w_attr),
             nn.LeakyReLU(0.2)
         )
-
+        # get the final judge
         self.Get_Logits = nn.Sequential(
             # 512 x 4 x 4
             nn.Conv2D(self.ndf * 8 + self.projected_embed_dim, 1, 4, 1, 0
@@ -51,6 +52,7 @@ class Discriminator(nn.Layer):
         )
 
     def forward(self, img, text_emb):
+        # return the final judge and image features
         pro_emb = self.pro_module(text_emb)
         cat_emb = paddle.expand(pro_emb, shape=(4, 4, pro_emb.shape[0], pro_emb.shape[1]))
         cat_emb = paddle.transpose(cat_emb, perm=[2, 3, 0, 1])
