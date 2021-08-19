@@ -22,7 +22,7 @@ python main.py --split=0
 将模型的参数保存在```model\```中  
 然后改变pretrain_model的值，再运行以下命令
 ```
-python main.py --validation --split=2 --pretrain_model=model/netG_200.pth
+python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 ```
 # Log
 ```
