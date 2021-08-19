@@ -109,7 +109,7 @@ class Trainer(object):
         # load the parameters into the models
         self.G.load_dict(paddle.load(model_path))
         self.G.train()
-        save_dir = 'image/'
+        save_dir = 'sample/'
         for s in self.dataloader():
             # get the data in test set
             right_images = s['right_images']
