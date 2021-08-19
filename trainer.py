@@ -102,8 +102,8 @@ class Trainer(object):
                 out_img.save(rf"image/{epoch}.png")
                 # save the parameters of models
                 if (epoch+1) % 10 == 0:
-                    paddle.save(self.G.state_dict(), 'model/netG_%03d.pth' % (epoch+1))
-                    paddle.save(self.D.state_dict(), 'model/netD_%03d.pth' % (epoch+1))
+                    paddle.save(self.G.state_dict(), 'model/netG_%03d.pdparams' % (epoch+1))
+                    paddle.save(self.D.state_dict(), 'model/netD_%03d.pdparams' % (epoch+1))
 
     def sample(self, model_path):
         # load the parameters into the models
