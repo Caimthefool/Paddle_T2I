@@ -87,7 +87,7 @@ python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 | --split| 0, 必选 | 使用的数据集分割 |0代表训练集，1代表验证集，2代表测试集|
 | --validation| false, 可选 | 进行预测和评估 ||
 | --pretrain_model| None, 可选 | 预训练模型路径 ||
-#### 训练
+### 6.3 训练
 ```bash
 python main.py --split=0
 ```
