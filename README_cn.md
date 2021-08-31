@@ -97,6 +97,11 @@ python main.py --split=0
 Epoch: [1 | 600]
 (1/78) Loss_D: 1.247 | Loss_G: 20.456 | D(X): 0.673 | D(G(X)): 0.415
 ```
+### 6.4 评估和预测流程
+我们的预训练模型已经包含在了这个repo中，就在model目录下
+```bash
+python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
+```
 # Log
 ```
 visualdl --logdir Log --port 8080
