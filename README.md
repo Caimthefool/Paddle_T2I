@@ -2,8 +2,10 @@
 Generative Adversarial Text to Image Synthesis 论文复现
 ## 一、简介
 本项目基于paddlepaddle框架复现T2I_GAN，T2I_GAN是第一个用于文本到图像合成任务的条件式GAN。给定一句文本描述，该模型能够理解文本的含义，合成出符合语义的图像 
+
 **论文:**
 - [1] Reed S, Akata Z, Yan X, et al. Generative adversarial text to image synthesis[C]//International Conference on Machine Learning. PMLR, 2016: 1060-1069. 
+
 **参考项目：**
 - [https://github.com/aelnouby/Text-to-Image-Synthesis](https://github.com/aelnouby/Text-to-Image-Synthesis)
 ## 二、复现精度
