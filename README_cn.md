@@ -102,6 +102,17 @@ Epoch: [1 | 600]
 ```bash
 python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 ```
+## 七、模型信息
+
+关于模型的其他信息，可以参考下表：
+
+| 信息 | 说明 |
+| --- | --- |
+| 发布者 | 曾威远|
+| 时间 | 2021.07 |
+| 框架版本 | Paddle 2.0.2 |
+| 应用场景 | 文本到图像的合成 |
+| 支持硬件 | GPU、CPU |
 # Log
 ```
 visualdl --logdir Log --port 8080
