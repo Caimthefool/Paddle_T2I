@@ -7,6 +7,8 @@ English | [简体中文](./README_cn.md)
       * [1 Introduction](#1-introduction)
       * [2 Accuracy](#2-accuracy)
       * [3 Dataset](#3-dataset)
+         * [Data Organization Format](#data-organization-format)
+         * [Dataset size](#dataset-size)
       * [4 Environment](#4-environment)
       * [5 Quick start](#5-quick-start)
          * [step1:clone](#step1clone)
@@ -40,7 +42,7 @@ If you want to convert the data format yourself, you can follow the steps below 
 - Download dataset:[flowers](https://drive.google.com/open?id=0B0ywwgffWnLLcms2WWJQRFNSWXM)（谷歌云盘）
 - Add the path to the dataset to ```config.yaml```
 - Run ```convert_flowers_to_hd5_script.py``` to convert the dataset storage format
-### 数据组织格式
+### Data Organization Format
 整个数据集下有三个子集，分别是"train"、"valid"、"test".  
 每个子集中包含5类数据(注：文本嵌入向量是由论文作者本人在[icml2016](https://github.com/reedscot/icml2016)提供的,已经由字符串形式转换成了向量形式，这部分数据包含在上面下载的数据集中)
 - 文件名```name```
