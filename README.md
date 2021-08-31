@@ -39,7 +39,7 @@ Dataset | Paddle_T2I | Text_to_Image_Synthesis
 [Oxford-102](https://drive.google.com/open?id=1EgnaTrlHGaqK5CCgHKLclZMT_AMSTyh8)
 This dataset was provided by [text-to-image-synthesis](https://github.com/aelnouby/Text-to-Image-Synthesis).The dataset has been converted to hd5 format for faster reading.The datasets are downloaded and saved in: ```Data\```   
 If you want to convert the data format yourself, you can follow the steps below (actually the format of the data storage is changed, the information of the data itself remains unchanged and no feature extraction is performed by the neural network). 
-- Download dataset:[flowers](https://drive.google.com/open?id=0B0ywwgffWnLLcms2WWJQRFNSWXM)（谷歌云盘）
+- Download dataset:[flowers](https://drive.google.com/open?id=0B0ywwgffWnLLcms2WWJQRFNSWXM)
 - Add the path to the dataset to ```config.yaml```
 - Run ```convert_flowers_to_hd5_script.py``` to convert the dataset storage format
 ### Data Organization Format
