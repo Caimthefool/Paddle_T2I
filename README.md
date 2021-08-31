@@ -104,7 +104,7 @@ Because the acceptance of this project is through the human eye to observe the i
 
 Training and evaluation-related parameters can be set in `main.py`, as follows.
 
-|  参数   | 默认值  | 说明 | 其他 |
+|  Parameters  | default  | description | other |
 |  -------  |  ----  |  ----  |  ----  |
 | config| None, Mandatory| Configuration file path ||
 | --split| 0, Mandatory | Data set splitused |0 represents the training set, 1 represents the validation set, 2 represents the test set|
