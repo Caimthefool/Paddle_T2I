@@ -5,7 +5,7 @@ Generative Adversarial Text to Image Synthesis 论文复现
 
 **论文:**
 - [1] Reed S, Akata Z, Yan X, et al. Generative adversarial text to image synthesis[C]//International Conference on Machine Learning. PMLR, 2016: 1060-1069.
-- 
+
 **参考项目：**
 - [https://github.com/aelnouby/Text-to-Image-Synthesis](https://github.com/aelnouby/Text-to-Image-Synthesis)
 ## 二、复现精度
