@@ -82,7 +82,7 @@ python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 可以在 `main.py` 中设置训练与评估相关参数，具体如下：
 
 |  参数   | 默认值  | 说明 | 其他 |
-|  ----  |  ----  |  ----  |  ----  |
+|  -------  |  ----  |  ----  |  ----  |
 | config| None, 必选| 配置文件路径 ||
 | --split| 0, 必选 | 使用的数据集分割 |0代表训练集，1代表验证集，2代表测试集|
 | --validation| false, 可选 | 进行预测和评估 ||
