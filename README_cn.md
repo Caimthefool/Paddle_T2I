@@ -87,7 +87,7 @@ python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 | --split| 0, 必选 | 使用的数据集分割 |0代表训练集，1代表验证集，2代表测试集|
 | --validation| false, 可选 | 进行预测和评估 ||
 | --pretrain_model| None, 可选 | 预训练模型路径 ||
-#### 单机训练
+#### 训练
 ```bash
 python main.py --split=0
 ```
@@ -95,7 +95,7 @@ python main.py --split=0
 执行训练开始后，将得到类似如下的输出。每一轮`batch`训练将会打印当前epoch、step以及loss值。
 ```text
 Epoch: [1 | 600]
-(1/78) LR: 0.001000 | Batch: 6.458s | Total: 0min | ETA: 8min | Loss: 0.614 | Loss(text/kernel): 0.506/0.109 | IoU(text/kernel): 0.274/0.317 | Acc rec: 0.000
+(1/78) Loss_D: 1.247 | Loss_G: 20.456 | D(X): 0.673 | D(G(X)): 0.415
 ```
 # Log
 ```
