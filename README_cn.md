@@ -1,5 +1,22 @@
 # Paddle_T2I
 Generative Adversarial Text to Image Synthesis 论文复现
+## 一、简介
+本项目基于paddlepaddle框架复现T2I_GAN，T2I_GAN是第一个用于文本到图像合成任务的条件式GAN。给定一句文本描述，该模型能够理解文本的含义，合成出符合语义的图像
+**论文:**
+- [1] Reed S, Akata Z, Yan X, et al. Generative adversarial text to image synthesis[C]//International Conference on Machine Learning. PMLR, 2016: 1060-1069.
+**参考项目：**
+- [https://github.com/aelnouby/Text-to-Image-Synthesis](https://github.com/aelnouby/Text-to-Image-Synthesis)
+## 二、复现精度
+本项目验收标准为Oxford-102数据集上人眼评估生成的图像，因此无具体定量指标，只展示合成的样例
+Dataset | Paddle_T2I | Text_to_Image_Synthesis
+:------:|:----------:|:------------------------:|
+[Oxford-102]|<img src="examples/paddle_T2I_64images.png" height = "300" width="300"/><br/>|<img src="examples/Text_to_Image_Synthesis_64_images.png" height = "300" width="300"/><br/>|
+## 三、数据集
+[Oxford-102花文本图像数据集](https://drive.google.com/open?id=1EgnaTrlHGaqK5CCgHKLclZMT_AMSTyh8)
+- 数据集大小：
+  - 训练集：1000张
+  - 测试集：500张
+- 数据格式：矩形框文本数据集  
 # Dataset
 我们使用的是 [Oxford-102](https://drive.google.com/open?id=1EgnaTrlHGaqK5CCgHKLclZMT_AMSTyh8) (谷歌云盘)数据集，这个数据集是由 [text-to-image-synthesis](https://github.com/aelnouby/Text-to-Image-Synthesis)项目提供的。为了更快地进行读取，数据集被转换成了hd5格式。数据集下载下来后保存在： ```Data\```   
 如果想要自行转换数据格式，可按照如下步骤操作（实际上就是把数据存储的格式改变了而已，数据本身的信息没有变动，没有经过神经网络进行特征提取）：  
