@@ -3,7 +3,7 @@ Generative Adversarial Text to Image Synthesis 论文复现
 
 [English](./README.md) | 简体中文
    
-   * [PSENet](#resnet)
+   * [Paddle_T2I])
       * [一、简介](#一简介)
       * [二、复现精度](#二复现精度)
       * [三、数据集](#三数据集)
