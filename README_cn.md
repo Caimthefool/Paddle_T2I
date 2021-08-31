@@ -61,7 +61,7 @@ python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 ## 六、代码结构与详细说明
 
 ### 6.1 代码结构
-因为本项目的验收是通过人眼观察图像，即user_study，因此评估脚本跟预测是同一个文件
+因为本项目的验收是通过人眼观察图像，即user_study，因此评估脚本跟预测是同一个方式
 
 ```
 ├─config                                                # 配置
@@ -69,24 +69,24 @@ python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 ├─models                                                # 模型
 ├─results                                               # 可视化结果
 ├─utils                                                 # 工具代码
-│  convert_flowers_to_hd5_script.py                     # 编译pse.cpp
-│  eval.py                                              # 评估
-│  predict.py                                           # 预测
+│  convert_flowers_to_hd5_script.py                     # 将数据集转换成hd5格式
 │  README.md                                            # 英文readme
 │  README_cn.md                                         # 中文readme
 │  requirement.txt                                      # 依赖
-│  train.py                                             # 训练
+│  trainer.py                                           # 训练器
+|  main.py                                              # 主程序入口
 ```
 
 ### 6.2 参数说明
 
-可以在 `train.py` 中设置训练与评估相关参数，具体如下：
+可以在 `main.py` 中设置训练与评估相关参数，具体如下：
 
 |  参数   | 默认值  | 说明 | 其他 |
 |  ----  |  ----  |  ----  |  ----  |
 | config| None, 必选| 配置文件路径 ||
-| --checkpoint| None, 可选 | 预训练模型参数路径 ||
-| --resume| None, 可选 | 恢复训练 |例如：--resume checkpoint_44_0 不是断点参数的绝对路径请注意|
+| --split| 0, 必选 | 使用的数据集分割 |0代表训练集，1代表验证集，2代表测试集|
+| --validation| false, 可选 | 进行预测和评估 ||
+| --pretrain_model| None, 可选 | 预训练模型路径 ||
 
 # Log
 ```
