@@ -14,9 +14,15 @@ Dataset | Paddle_T2I | Text_to_Image_Synthesis
 ## 三、数据集
 [Oxford-102花文本图像数据集](https://drive.google.com/open?id=1EgnaTrlHGaqK5CCgHKLclZMT_AMSTyh8)
 - 数据集大小：
-  - 训练集：1000张
-  - 测试集：500张
-- 数据格式：矩形框文本数据集  
+  - 训练集：8192张
+  - 测试集：800张
+  - 每张图像对应的文本数:5句
+- 数据格式：花卉图像以及图像对应的文本数据集
+## 四、环境依赖
+- 硬件：GPU、CPU
+
+- 框架：
+  - PaddlePaddle >= 2.0.0
 # Dataset
 我们使用的是 [Oxford-102](https://drive.google.com/open?id=1EgnaTrlHGaqK5CCgHKLclZMT_AMSTyh8) (谷歌云盘)数据集，这个数据集是由 [text-to-image-synthesis](https://github.com/aelnouby/Text-to-Image-Synthesis)项目提供的。为了更快地进行读取，数据集被转换成了hd5格式。数据集下载下来后保存在： ```Data\```   
 如果想要自行转换数据格式，可按照如下步骤操作（实际上就是把数据存储的格式改变了而已，数据本身的信息没有变动，没有经过神经网络进行特征提取）：  
