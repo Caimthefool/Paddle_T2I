@@ -51,14 +51,14 @@ There are three subsets under the whole dataset, namely "train", "valid" and "te
 - text description of image```txt```
 
 ### Dataset size：
-  - 训练集+验证集：8192张
-  - 测试集：800张
-  - 每张图像对应的文本数:5句
-  - 数据格式：花卉图像以及图像对应的文本数据集
+  - Train+Validation：8192
+  - Test：800
+  - Number of text per image:5
+  - Data format: flower images and the corresponding text data set of the images
 ## 4 Environment
-- 硬件：GPU、CPU
+- Hardware：GPU、CPU
 
-- 框架：
+- Framwork：
   - PaddlePaddle >= 2.0.0
 ## 5 Quick start
 ### step1:clone
@@ -71,13 +71,13 @@ cd Paddle_T2I
 python main.py --split=0
 ```
 ### step3:Test
-将模型的参数保存在```model\```中，然后改变pretrain_model的值，再运行以下命令，输出图片保存在```image\```目录中
+Save the parameters of the model in ```model\```, then change the value of pretrain_model, and then run the following command to save the output image in the ```image\``` directory
 ```
 python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 ```
 ### Prediction using pre training model
 
-将需要测试的文件放在参数pretrain_model确定的目录下，运行下面指令，输出图片保存在```image\```目录中
+Place the files to be tested in the directory determined by the parameter pretrain_model, run the following command, and save the output images in the ```image\``` directory
 ```
 python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 ```
