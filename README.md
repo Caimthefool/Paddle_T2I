@@ -104,7 +104,7 @@ Epoch: [1 | 600]
 ```bash
 python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 ```
-## Model information
+## 7 Model information
 
 For other information about the model, please refer to the following table:
 
