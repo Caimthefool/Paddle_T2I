@@ -1,5 +1,28 @@
 # Paddle_T2I
 this is a paddle repo of Generative Adversarial Text to Image Synthesis
+
+English | [简体中文](./README_cn.md)
+   
+   * [Paddle_T2I]
+      * [1 Introduction](#1-introduction)
+      * [2 Accuracy](#2-accuracy)
+      * [3 Dataset](#3-dataset)
+      * [4 Environment](#4-environment)
+      * [5 Quick start](#5-quick-start)
+         * [step1:clone](#clone)
+         * [step2:Training](#Training)
+         * [step3:Test](#Test)
+      * [6 Code structure](#6 Code structure)
+         * [6.1 structure](#61-structure)
+         * [6.2 Parameter description](#62-Parameter description)
+         * [6.3 Training process](#63-Training process)
+            * [Single machine training](#Single machine training)
+            * [Multi machine training](#Multi machine training)
+            * [Training output](#Training output)
+         * [6.4 Evaluation process](#64-Evaluation process)
+         * [6.5 Test process](#65-Test process)
+         * [6.6 Prediction using pre training model](#66-Prediction using pre training model)
+      * [7 Model information](#7 Model information)
 ## 1 Introduction
 本项目基于paddlepaddle框架复现T2I_GAN，T2I_GAN是第一个用于文本到图像合成任务的条件式GAN。给定一句文本描述，该模型能够理解文本的含义，合成出符合语义的图像 
 
@@ -40,16 +63,16 @@ Dataset | Paddle_T2I | Text_to_Image_Synthesis
 - 框架：
   - PaddlePaddle >= 2.0.0
 ## 5 Quick start
-### step1:clone
+### clone
 ```bash
 git clone https://github.com/Caimthefool/Paddle_T2I.git
 cd Paddle_T2I
 ```
-### step2:Training
+### Training
 ```
 python main.py --split=0
 ```
-### step3:Test
+### Test
 将模型的参数保存在```model\```中，然后改变pretrain_model的值，再运行以下命令，输出图片保存在```image\```目录中
 ```
 python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
