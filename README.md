@@ -9,9 +9,9 @@ English | [简体中文](./README_cn.md)
       * [3 Dataset](#3-dataset)
       * [4 Environment](#4-environment)
       * [5 Quick start](#5-quick-start)
-         * [step1:clone](#clone)
-         * [step2:Training](#Training)
-         * [step3:Test](#Test)
+         * [step1:clone](#step1clone)
+         * [step2:Training](#step2Training)
+         * [step3:Test](#step3Test)
       * [6 Code structure](#6 Code structure)
          * [6.1 structure](#61-structure)
          * [6.2 Parameter description](#62-Parameter description)
@@ -63,16 +63,16 @@ Dataset | Paddle_T2I | Text_to_Image_Synthesis
 - 框架：
   - PaddlePaddle >= 2.0.0
 ## 5 Quick start
-### clone
+### step1:clone
 ```bash
 git clone https://github.com/Caimthefool/Paddle_T2I.git
 cd Paddle_T2I
 ```
-### Training
+### step2:Training
 ```
 python main.py --split=0
 ```
-### Test
+### step3:Test
 将模型的参数保存在```model\```中，然后改变pretrain_model的值，再运行以下命令，输出图片保存在```image\```目录中
 ```
 python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
