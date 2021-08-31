@@ -84,44 +84,44 @@ python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 ## 6 Code structure
 
 ### 6.1 structure
-因为本项目的验收是通过人眼观察图像，即user_study，因此评估脚本跟预测是同一个方式
+Because the acceptance of this project is through the human eye to observe the image, i.e. user_study, the evaluation is the same way as the prediction
 
 ```
-├─config                                                # 配置
-├─dataset                                               # 数据集加载
-├─models                                                # 模型
-├─results                                               # 可视化结果
-├─utils                                                 # 工具代码
-│  convert_flowers_to_hd5_script.py                     # 将数据集转换成hd5格式
-│  README.md                                            # 英文readme
-│  README_cn.md                                         # 中文readme
-│  requirement.txt                                      # 依赖
-│  trainer.py                                           # 训练器
-|  main.py                                              # 主程序入口
+├─config                                                
+├─dataset                                               
+├─models                                                
+├─results                                               
+├─utils                                                 
+│  convert_flowers_to_hd5_script.py                     
+│  README.md                                            
+│  README_cn.md                                         
+│  requirement.txt                                      
+│  trainer.py                                           
+|  main.py                                              
 ```
 
 ### 6.2 Parameter description
 
-可以在 `main.py` 中设置训练与评估相关参数，具体如下：
+Training and evaluation-related parameters can be set in `main.py`, as follows.
 
 |  参数   | 默认值  | 说明 | 其他 |
 |  -------  |  ----  |  ----  |  ----  |
-| config| None, 必选| 配置文件路径 ||
-| --split| 0, 必选 | 使用的数据集分割 |0代表训练集，1代表验证集，2代表测试集|
-| --validation| false, 可选 | 进行预测和评估 ||
-| --pretrain_model| None, 可选 | 预训练模型路径 ||
+| config| None, Mandatory| Configuration file path ||
+| --split| 0, Mandatory | Data set splitused |0 represents the training set, 1 represents the validation set, 2 represents the test set|
+| --validation| false, Optional | Prediction and evaluation ||
+| --pretrain_model| None, Optional | Pre-trained model path ||
 ### 6.3 Training
 ```bash
 python main.py --split=0
 ```
 #### Training output
-执行训练开始后，将得到类似如下的输出。每一轮`batch`训练将会打印当前epoch、step以及loss值。
+When training is executed, the output will look like the following. Each round of `batch` training will print the current epoch, step, and loss values.
 ```text
 Epoch: [1 | 600]
 (1/78) Loss_D: 1.247 | Loss_G: 20.456 | D(X): 0.673 | D(G(X)): 0.415
 ```
 ### 6.4 Evaluation and Test
-我们的预训练模型已经包含在了这个repo中，就在model目录下
+Our pre-trained model is already included in this repo, in the model directory
 ```bash
 python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 ```
