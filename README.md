@@ -32,6 +32,7 @@ This project replicates T2I_GAN, the first conditional GAN for text-to-image syn
 - [https://github.com/aelnouby/Text-to-Image-Synthesis](https://github.com/aelnouby/Text-to-Image-Synthesis)
 ## 2 Accuracy
 The acceptance criteria for this project is to evaluate the images generated on the Oxford-102 dataset with the human eye, so there are no specific quantitative metrics and only synthetic samples are shown
+
 Dataset | Paddle_T2I | Text_to_Image_Synthesis
 :------:|:----------:|:------------------------:|
 [Oxford-102]|<img src="examples/paddle_T2I_64images.png" height = "300" width="300"/><br/>|<img src="examples/Text_to_Image_Synthesis_64_images.png" height = "300" width="300"/><br/>|
