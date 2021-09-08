@@ -32,6 +32,7 @@ Generative Adversarial Text to Image Synthesis 论文复现
 - [https://github.com/aelnouby/Text-to-Image-Synthesis](https://github.com/aelnouby/Text-to-Image-Synthesis)
 ## 二、复现精度
 本项目验收标准为Oxford-102数据集上人眼评估生成的图像，因此无具体定量指标，只展示合成的样例
+
 Dataset | Paddle_T2I | Text_to_Image_Synthesis
 :------:|:----------:|:------------------------:|
 [Oxford-102]|<img src="examples/paddle_T2I_64images.png" height = "300" width="300"/><br/>|<img src="examples/Text_to_Image_Synthesis_64_images.png" height = "300" width="300"/><br/>|
