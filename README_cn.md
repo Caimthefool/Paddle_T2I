@@ -103,6 +103,7 @@ python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 |  generator.py                                         # 生成器
 │  trainer.py                                           # 训练器
 |  main.py                                              # 主程序入口
+|  requirement.txt                                      # 依赖文件
 ```
 
 ### 6.2 参数说明
