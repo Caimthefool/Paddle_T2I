@@ -89,15 +89,18 @@ python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 因为本项目的验收是通过人眼观察图像，即user_study，因此评估脚本跟预测是同一个方式
 
 ```
-├─config                                                # 配置
-├─dataset                                               # 数据集加载
-├─models                                                # 模型
-├─results                                               # 可视化结果
-├─utils                                                 # 工具代码
+├─Data                                                  # 数据集
+├─Log                                                   # 训练日志
+├─example                                               # 预测的样例
+├─image                                                 # 训练时的可视化图像结果
+├─model                                                 # 模型参数文件
+├─sample                                                # 预测的可视化图像结果
+|  T2IDataset.py                                        # 数据集加载
 │  convert_flowers_to_hd5_script.py                     # 将数据集转换成hd5格式
 │  README.md                                            # 英文readme
 │  README_cn.md                                         # 中文readme
-│  requirement.txt                                      # 依赖
+│  discriminator.py                                     # 判别器
+|  generator.py                                         # 生成器
 │  trainer.py                                           # 训练器
 |  main.py                                              # 主程序入口
 ```
