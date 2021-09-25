@@ -1,0 +1,5 @@
+paddlepaddle-gpu
+h5py
+argparse
+PIL
+visualdl
