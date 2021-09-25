@@ -4,15 +4,15 @@ import paddle.nn as nn
 
 # define the generator
 class Generator(nn.Layer):
-    def __init__(self):
+    def __init__(self, noise_dim, projected_embed_dim, ngf):
         super(Generator, self).__init__()
         self.num_channels = 3
         self.image_size = 64
-        self.noise_dim = 100
+        self.noise_dim = noise_dim
         self.embed_dim = 1024
-        self.projected_embed_dim = 128
+        self.projected_embed_dim = projected_embed_dim
         self.latent_dim = self.noise_dim + self.projected_embed_dim
-        self.ngf = 64
+        self.ngf = ngf
         self.conv_w_attr = paddle.framework.ParamAttr(initializer=nn.initializer.Normal(mean=0.0, std=0.02))
         self.batch_w_attr = paddle.framework.ParamAttr(initializer=nn.initializer.Normal(mean=1.0, std=0.02))
         # reduce the dimension of sentence embeddings

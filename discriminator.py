@@ -4,13 +4,13 @@ import paddle.nn as nn
 
 # define the discriminator
 class Discriminator(nn.Layer):
-    def __init__(self):
+    def __init__(self, projected_embed_dim, ndf):
         super(Discriminator, self).__init__()
         self.image_size = 64
         self.num_channels = 3
         self.embed_dim = 1024
-        self.projected_embed_dim = 128
-        self.ndf = 64
+        self.projected_embed_dim = projected_embed_dim
+        self.ndf = ndf
         self.conv_w_attr = paddle.framework.ParamAttr(initializer=nn.initializer.Normal(mean=0.0, std=0.02))
         self.batch_w_attr = paddle.framework.ParamAttr(initializer=nn.initializer.Normal(mean=1.0, std=0.02))
         self.batch_b_attr = paddle.framework.ParamAttr(initializer=nn.initializer.Normal(mean=1.0, std=0.02))

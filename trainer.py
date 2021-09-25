@@ -11,11 +11,11 @@ from visualdl import LogWriter
 
 # define the trainer
 class Trainer(object):
-    def __init__(self, batch_size, num_workers, epochs, split):
+    def __init__(self, batch_size, num_workers, epochs, split, noise_dim, projected_embed_dim, ngf, ndf):
         # initialize
-        self.G = Generator()
-        self.D = Discriminator()
-        self.noise_dim = 100
+        self.G = Generator(noise_dim, projected_embed_dim, ngf)
+        self.D = Discriminator(projected_embed_dim, ndf)
+        self.noise_dim = noise_dim
         self.split = split
         self.batch_size = batch_size
         self.num_workers = num_workers
