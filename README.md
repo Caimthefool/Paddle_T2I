@@ -103,7 +103,7 @@ Because the acceptance of this project is through the human eye to observe the i
 |  generator.py  
 │  trainer.py                                           
 |  main.py   
-
+|  requirement.txt
 ```
 
 ### 6.2 Parameter description
