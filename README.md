@@ -88,17 +88,22 @@ python main.py --validation --split=2 --pretrain_model=model/netG.pdparams
 Because the acceptance of this project is through the human eye to observe the image, i.e. user_study, the evaluation is the same way as the prediction
 
 ```
-├─config                                                
-├─dataset                                               
-├─models                                                
-├─results                                               
-├─utils                                                 
+├─Data                                                
+├─Log                                               
+├─examples                                                
+├─image                                               
+├─model
+├─sample
+|  T2IDataset.py
+|  config.yaml  
 │  convert_flowers_to_hd5_script.py                     
 │  README.md                                            
 │  README_cn.md                                         
-│  requirement.txt                                      
+│  discriminator.py
+|  generator.py  
 │  trainer.py                                           
-|  main.py                                              
+|  main.py   
+
 ```
 
 ### 6.2 Parameter description
