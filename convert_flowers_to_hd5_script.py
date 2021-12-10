@@ -1,3 +1,5 @@
+# these codes come from https://github.com/aelnouby/Text-to-Image-Synthesis
+# licensed under GNU General Public License v3.0
 import os
 from os.path import join, isfile
 import numpy as np
